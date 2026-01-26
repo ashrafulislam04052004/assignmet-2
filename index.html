@@ -13,42 +13,50 @@
 <body>
   <!-- Navbar -->
   <nav class="w-full bg-[#412567]  py-4 ">
-    <div class="max-w-7xl mx-auto lg:flex  items-center justify-between">
+    <div class="max-w-7xl mx-auto flex   items-center justify-between px-4">
       <!-- Logo -->
       <h1 class="text-4xl font-bold"><span class="text-white">Tech</span><span
           class="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Wave</span></h1>
-
       <!-- Destop Menu -->
-      <div>
+      <div class="hidden lg:flex items-center gap-10">
         <ul class="flex items-center gap-8 text-white">
           <li class="hover:text-pink-400 cursor-pointer">About</li>
           <li class="hover:text-pink-400 cursor-pointer">Episodes </li>
           <li class="hover:text-pink-400 cursor-pointer">Host</li>
         </ul>
-      </div>
-
-      <!-- Subscribe Button -->
-      <div>
         <button
           class=" px-6 py-2 rounded-full font-semibold text-white bg-gradient-to-r from-pink-500 to-yellow-400 hover:opacity-90">
           Subscribe →</button>
       </div>
+       <button class="lg:hidden text-white text-2xl">☰</button>
     </div>
   </nav>
+    
 
+ 
+
+
+
+
+
+
+
+
+  
 
   <!-- Hero -->
-  <section class="h-full h-[100vh]" style="background-image: url('assets/hero-bg.png');">
-    <div class="  flex flex-col justify-center  items-center  ">
+    <section class="relative bg-cover bg-center min-h-screen flex items-center justify-center overflow-hidden px-4" style="background-image: url('assets/hero-bg.png');">
 
-      <div class="absolute left-40 top-60 relative translate-x-[-50%] translate-y-[-40%] w-[300px] h-[300px]">
-        <img class="absolute" src="assets/hero-circle.png" alt="">
-           <span class="absolute top-4 right-4 bg-green-400 text-black text-xs font-bold px-4 py-1 rounded-full">NEW</span>
-         <div class="absolute right-24 top-16 ">
 
-          <img src="assets/microphone.png" alt="">
-        </div>
-      </div>
+
+    <div class="  flex flex-col justify-center  items-center ">
+     <div class="relative  top-20 bg-[url('assets/hero-circle.png')] bg-cover w-[350px] h-[350px] flex justify-center items-center">
+    
+      <span class=" absolute top-4 right-4 bg-green-400 text-black text-xs font-bold px-4 py-1 rounded-full">NEW</span>
+      <img src="assets/microphone.png" alt=""> 
+    </div>
+
+    
       <div class=" mt-48 text-white text-center  leading-[60px]">
         <h1 class="text-4xl font-bold ">TechWave</h1>
         <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
@@ -114,16 +122,15 @@
       </div>
     </section>
 
-
-
-
-
     <!-- grid section -->
-    <section class="w-full bg-[#230E3D] ">
-    <div class=" px-16 text-white py-24">
-         <h1 class="text-4xl text-center font-bold text-white  mb-10 mt-4">About the Podcast</h1>
-        <div class="grid grid-cols-3 gap-8 max-w-[1200px] mx-auto">
+    <section class="w-full bg-[#230E3D] py-12 ">
+
+      <div>
+       <h1 class="text-4xl text-center font-bold text-white  mb-10 mt-4">About the Podcast</h1></div>
+        
+        <div class=" w-[1200px] mx-auto justify-center  grid grid-cols-1 sm:grid-cols-3 gap-8 px-4 text-white ">
           <!-- Premium Audio -->
+           
           <div class="row-span-2 rounded-3xl bg-[#351165] p-8">
             <div class="text-pink-400 text-4x1 mb-6"><img src="assets/headphone.png" alt=""></div>
             <h3 class="text-xl font-semibold mb-3">Premium Audio Quality</h3>
@@ -171,19 +178,20 @@
               Access show notes, transcripts, and additional learning materials for every episode.
             </p>
           </div>
-        </div>
+        
     </section>
 
 
 
-    <section class="bg-[#140726] py-16">
+    <section class="w-full bg-[#140726] py-16">
       <h1 class="text-4xl text-center font-bold text-white  mb-10 mt-4">Featured Episodes</h1>
-      <div class="w-[1200px] h-[538px] mx-auto lg:flex gap-8">
+        <div class="max-w[1200px] mx-auto flex flex-col gap-8 lg:flex-row px-4">
         <!-- Video Card 1 -->
-        <div class="flex-1 bg-[#2a124f] rounded-2xl ">
+        <div class="flex-1 bg-[#2a124f] rounded-2xl overflow-hidden ">
           <div class="relative group">
             <a href="https://www.youtube.com/watch?v=ckeyZUyRF3s" target="_blank" target="_blank"
               class="block w-full h-[260px] relative">
+              
               <img src="https://img.youtube.com/vi/ckeyZUyRF3s/maxresdefault.jpg" class="w-full h-full object-cover"
                 alt="video thumbnail">
               <!-- play Icon -->
@@ -208,7 +216,7 @@
 
 
         <!-- Video Card 2 -->
-        <div class="flex-1 bg-[#2a124f] rounded-2xl overflow-hidden hover:-translate-y-2 transition">
+        <div class="flex-1 bg-[#2a124f] rounded-2xl overflow-hidden ">
           <div class="relative group">
             <a href="https://www.youtube.com/watch?v=lq-sWRnYWKQ&t=1s" target="_blank" target="_blank"
               class="block w-full h-[260px] relative">
@@ -307,8 +315,9 @@
     <section class="w-full h-[412px] " style="background-image: url('assets/footer-bg.png');">
 
       <div class="text-center text-white  px-[8rem] py-[8rem]">
+        <div>
         <h1 class="text-6xl font-bold"><span class="text-white">Tech</span><span
-            class="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Wave</span></h1>
+            class="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Wave</span></h1></div>
         <!-- Social / Platform Icons -->
         <div class="flex text-[1rem] cursor-pointer  justify-center gap-12 mt-6 max-[576px]:flex-wrap">
           <span class="flex hover:bg-pink-500 rounded-full items-center gap-2 opacity-100"><img src="assets/spotify.png"
